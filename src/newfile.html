@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const student = {
+        Name: 'Alex',
+        'age': 18,
+        isStudent: true,
+        friends: ['Nick', 'John']
+        greeting: function () {
+                 console.log("I'm a function!")
+
+        },
+        setPropValue: function(propName, value){
+        this[propName] = value;
+        }
+    };
+    student.setPropValue('name', 'Helga');
+    console.log(student);
+
+</script>
+
+
+</body>
+</html>
